@@ -2,7 +2,7 @@
 /*
     Plugin Name: EDD Slack Notifications - Add customer data
     Plugin URL: https://github.com/garubi/EDD-Slack-Notifications--Add-Customer-Data
-    Description: Extends the message sent to Slack adding the customer informations: Name, last name and email. Requires my fork of https://github.com/tubiz/edd-slack-notifications
+    Description: Extends the message sent to Slack adding the customer informations: Name, last name and email. Requires my fork of EDD-Slack-Notifications: https://github.com/garubi/edd-slack-notifications
     Version: 1.0
     Author: Stefano Garuti
     Author URI: http://wpmania.it
