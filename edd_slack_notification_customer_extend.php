@@ -15,7 +15,7 @@ if( ! defined( 'ABSPATH' ) ) exit;
 
 function edd_slack_customer_activation(){
 
-    if ( ! class_exists( 'Easy_Digital_Downloads' ) ) {
+    if ( ! function_exists( 'tbz_edd_notify_slack' ) ) {
 
         // display notice
         add_action( 'admin_notices', 'edd_slack_customer_admin_notices' );
@@ -29,8 +29,8 @@ add_action( 'admin_init', 'edd_slack_customer_activation' );
 
 function edd_slack_customer_admin_notices(){
 
-    if ( ! is_plugin_active( 'easy-digital-downloads/easy-digital-downloads.php' ) ) {
-        echo '<div class="error"><p>You must install & activate <a href="http://wordpress.org/plugins/easy-digital-downloads/" title="Easy Digital Downloads" target="_blank"><strong>Easy Digital Downloads</strong></a> to use <strong>Easy Digital Downloads - Slack Notifications</strong></p></div>';
+    if ( ! is_plugin_active( 'easy-digital-downloads-slack-notifications/edd-slack-notifications.php' ) ) {
+        echo '<div class="error"><p>You must install & activate <strong>Easy Digital Downloads - Slack Notifications</strong></a> to use this plugin</p></div>';
     }
 
 }
